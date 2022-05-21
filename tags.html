@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    
+
+        <title>Tags - MediaCMS</title>
+
+        <meta charset="utf-8">
+
+<meta content="ie=edge" http-equiv="x-ua-compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+<meta name="robots" content="index, follow" />
+
+<meta name="slurp" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="yandexbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="baiduspider" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<meta property="og:site_name" content="MediaCMS" />
+
+
+        
+
+<meta property="og:title" content="Tags - MediaCMS">
+<meta property="og:type" content="website">
+<meta property="og:description" content="">
+
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+        "name": "MediaCMS",
+        "item": {
+            "@type": "WebPage",
+            "@id": "https://demo.mediacms.io/"
+        }
+    },
+    {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tags",
+        "item": {
+            "@type": "WebPage",
+            "@id": "https://demo.mediacms.io//tags"
+        }
+    }]
+}
+</script>
+
+
+
+        
+
+        
+		<link rel="apple-touch-icon" sizes="180x180" href="static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="static/favicons/site.webmanifest">
+		<link rel="mask-icon" href="static/favicons/safari-pinned-tab.svg" color="#009933">
+		<link rel="shortcut icon" href="static/favicons/favicon.ico">
+		<link rel="alternate" type="application/rss+xml" title="RSS feeds" href="rss/index.rss" />
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		
+		<link href="static/lib/material-icons/material-icons.css" rel="preload" as="style">
+		<link href="static/lib/gfonts/gfonts.css" rel="preload" as="style">
+		<link href="static/lib/material-icons/material-icons.css" rel="stylesheet">
+		<link href="static/lib/gfonts/gfonts.css" rel="stylesheet">
+		
+
+		<link href="static/css/_commons.css" rel="preload" as="style">
+		<link href="static/css/_commons.css" rel="stylesheet">
+
+		<link href="static/css/_extra.css" rel="preload" as="style">
+		<link href="static/css/_extra.css" rel="stylesheet">
+
+		<link href="static/js/_commons.js" rel="preload" as="script">
+
+
+        
+
+        <script type="text/javascript">
+	
+	var MediaCMS = {
+		
+		profileId: "", 
+	};
+
+	MediaCMS.api = {
+	media: "/media",
+    playlists: "/playlists",
+    comments: '/comments',
+    search: "/search",
+    tags: '/tags',
+    categories: '/categories',
+    members: '/users',
+    liked: '/user/action/like',
+    history: '/user/action/watch',
+	actions: '/actions',
+    
+    
+    
+};
+	MediaCMS.url = {
+    home: "/",
+    search: "/search",
+    latestMedia: "/latest",
+    featuredMedia: "/featured",
+    recommendedMedia: "/recommended",
+    members: "/members",
+    /* Error pages */
+    error404: "/error",
+    /* Archive pages */
+    tags: "/tags",
+    categories: "/categories",
+    /* User pages */
+    likedMedia: "/liked",
+    history: "/history",
+    /* Add pages */
+    addMedia: "/upload",
+    /* Profile/account edit pages */
+    editProfile: "",
+    
+    signin: "/accounts/login/",
+    register: "/accounts/signup/",
+    
+};
+
+	MediaCMS.user = {
+	name: null,
+	username: null,
+	thumbnail: null,
+	is: {
+		admin: false,
+		anonymous: true,
+	},
+	can: {
+		addMedia: true,
+		editMedia: false,
+		deleteMedia: false,
+		editSubtitle: false,
+		readComment: true,
+		addComment: true,
+		deleteComment: false,
+		editProfile: false,
+		deleteProfile: false,
+		manageMedia: false,
+		manageUsers: false,
+		manageComments: false,
+	},
+	pages: {
+		media: '/user/',
+		about: '/user//about',
+		playlists: '/user//playlists',
+	}
+};
+
+
+	MediaCMS.contents = {
+    sidebar: {
+        navMenuItems: [{
+                text: "About",
+                link: "/about",
+                icon: 'contact_support',
+            },
+            {
+                text: "Terms",
+                link: "/tos",
+                icon: 'insert_drive_file',
+            },
+            {
+                text: "Contact",
+                link: "/contact",
+                icon: 'alternate_email',
+            }
+        ],
+        belowNavMenu: null,
+        footer: 'Powered by <a href="//mediacms.io" title="mediacms.io" target="_blank">mediacms.io</a>',
+    },
+    uploader: {
+        belowUploadArea: "",
+        postUploadMessage: "",
+    },
+};
+	MediaCMS.features = {
+	embeddedVideo: {
+		initialDimensions: {	// In pixels.
+			width: 560,		
+            height: 315,
+		},
+	},
+	headerBar:{
+		hideLogin: false,
+		hideRegister: false,
+	},
+	sideBar: {
+	  hideHomeLink: false,
+	  hideTagsLink: false,
+	  hideCategoriesLink: false,
+	},
+	media:{
+		actions:{
+			share: true,
+			report: true,
+			like: true,
+			dislike: true,
+			download: true,
+			comment: true,
+			save: true,
+		},
+		shareOptions: [ 'embed', 'fb', 'tw', 'whatsapp', 'telegram', 'reddit', 'tumblr', 'vk', 'pinterest', 'mix', 'linkedin', 'email' ],
+	},
+	mediaItem:{
+		hideDate: false,
+		hideViews: false,
+		hideAuthor: false,
+	},
+	playlists:{
+		mediaTypes: ['audio', 'video'],
+	}
+};
+
+	MediaCMS.pages = {
+	home: {
+		sections:{
+			latest:{
+				title: 'Latest',
+			},
+		},
+	},
+	search:{
+		advancedFilters: true,
+	},
+	media: {
+		categoriesWithTitle: false,
+		htmlInDescription: false,
+		hideViews: false,
+		related:{
+			initialSize: 15,
+		},
+	},
+	profile:{
+		htmlInDescription: false,
+		includeHistory: false,
+		includeLikedMedia: false,
+	},
+};
+	MediaCMS.site = {
+ 	id: 'mediacms',
+    title: "MediaCMS",
+    url: 'https://demo.mediacms.io/',
+    api: 'https://demo.mediacms.io/api/v1',
+    theme: {
+    	mode: 'light',   
+		switch: {
+			position: 'sidebar',	// Valid values: 'header', 'sidebar'.
+		},
+    },
+    logo:{
+    	lightMode:{
+            img: "/static/images/logo_dark.png",
+            svg: "/static/images/logo_dark.svg",
+    	},
+    	darkMode:{
+            img: "/static/images/logo_light.png",
+            svg: "/static/images/logo_light.svg",
+    	},
+    },
+    pages: {
+	    latest:{
+	    	title: 'Recent uploads',
+	    },
+	    featured:{
+	    	title: 'Featured',
+	    },
+	    recommended:{
+	    	title: 'Recommended',
+	    },
+	    members:{
+	    	title: 'Members',
+	    },
+    },
+    userPages: {
+    	liked: {
+	    	title: 'Liked media',
+    	},
+    	history: {
+	    	title: 'History',
+    	},
+    },
+    taxonomies: {
+	    tags: {
+	    	title: 'Tags',
+	    },
+	    categories: {
+	    	title: 'Categories',
+	    },
+    },
+};
+
+
+
+	window.MediaCMS = MediaCMS;
+	
+</script>
+
+        
+    
+
+</head>
+
+<body>
+
+    
+<div id="app-header"></div>
+<div id="app-sidebar"></div>
+
+
+    <div class="page-main-wrap">
+        
+
+
+
+
+
+        <div id="page-tags"></div>
+    </div>
+
+    
+<div id="app-footer"></div>
+
+
+    
+    <script src="static/lib/video-js/7.7.5/video.min.js"></script>
+    
+
+    
+
+    
+
+		<script src="static/js/_commons.js"></script>
+
+    
+<script src="static/js/tags.js"></script>
+
+
+</body>
+
+</html>
