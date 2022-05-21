@@ -1,373 +1,227 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn" dir="ltr" class="no-js">
+
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>IBVC - 关于</title>
+    <meta name="description" content="IBVC，英文全名 International Banned Videos Collection，中文全名 全球封禁视频收录组织。「IBVC」是一个无国界的，基于GitHub面向世界的，开源视频网站，我们收录来自各大平台曾经有名但在某些视频网站被封禁的视频 。 " />
+    <meta name="keywords" content="IBVC,Videos,IBVC-Videos,Banned-Videos,封禁,封禁视频,视频,封禁视频收录组织,视频网站" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/nprogress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/default.css" type="text/css" media="screen" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.nivo.slider.pack.js"></script>
+    <script src="assets/js/nprogress.js"></script>
+    <!-- OpenGraph meta -->
+    <meta property="og:image" content="icon-180x180.png">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <!-- /OpenGraph meta -->
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/LOGO/IBVC-transparent.png">
+    <!-- /Favicon -->
 
-
-    
-
-        <title>About - MediaCMS</title>
-
-        <meta charset="utf-8">
-
-<meta content="ie=edge" http-equiv="x-ua-compatible">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-
-<meta name="robots" content="index, follow" />
-
-<meta name="slurp" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<meta name="yandexbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<meta name="baiduspider" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-
-<meta property="og:site_name" content="MediaCMS" />
-
-
-        
-
-<meta property="og:title" content="About - MediaCMS">
-<meta property="og:type" content="website">
-<meta property="og:description" content="">
-
-<meta name="twitter:card" content="summary">
-
-<script type="application/ld+json">
-{
-	"@context": "https://schema.org",
-	"@type": "BreadcrumbList",
-	"itemListElement": [{
-		"@type": "ListItem",
-		"position": 1,
-        "name": "MediaCMS",
-        "item": {
-			"@type": "WebPage",
-	        "@id": "https://demo.mediacms.io/"
-	    }
-    },
-    {
-		"@type": "ListItem",
-		"position": 2,
-        "name": "About",
-        "item": {
-			"@type": "AboutPage",
-	        "@id": "https://demo.mediacms.io//about"
-	    }
-    }]
-}
-</script>
-
-
-
-        
-
-        
-		<link rel="apple-touch-icon" sizes="180x180" href="static/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
-		<link rel="manifest" href="static/favicons/site.webmanifest">
-		<link rel="mask-icon" href="static/favicons/safari-pinned-tab.svg" color="#009933">
-		<link rel="shortcut icon" href="static/favicons/favicon.ico">
-		<link rel="alternate" type="application/rss+xml" title="RSS feeds" href="rss/index.rss" />
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
-
-		
-		<link href="static/lib/material-icons/material-icons.css" rel="preload" as="style">
-		<link href="static/lib/gfonts/gfonts.css" rel="preload" as="style">
-		<link href="static/lib/material-icons/material-icons.css" rel="stylesheet">
-		<link href="static/lib/gfonts/gfonts.css" rel="stylesheet">
-		
-
-		<link href="static/css/_commons.css" rel="preload" as="style">
-		<link href="static/css/_commons.css" rel="stylesheet">
-
-		<link href="static/css/_extra.css" rel="preload" as="style">
-		<link href="static/css/_extra.css" rel="stylesheet">
-
-		<link href="static/js/_commons.js" rel="preload" as="script">
-
-
-        
-
-        <script type="text/javascript">
-	
-	var MediaCMS = {
-		
-		profileId: "", 
-	};
-
-	MediaCMS.api = {
-	media: "/media",
-    playlists: "/playlists",
-    comments: '/comments',
-    search: "/search",
-    tags: '/tags',
-    categories: '/categories',
-    members: '/users',
-    liked: '/user/action/like',
-    history: '/user/action/watch',
-	actions: '/actions',
-    
-    
-    
-};
-	MediaCMS.url = {
-    home: "/",
-    search: "/search",
-    latestMedia: "/latest",
-    featuredMedia: "/featured",
-    recommendedMedia: "/recommended",
-    members: "/members",
-    /* Error pages */
-    error404: "/error",
-    /* Archive pages */
-    tags: "/tags",
-    categories: "/categories",
-    /* User pages */
-    likedMedia: "/liked",
-    history: "/history",
-    /* Add pages */
-    addMedia: "/upload",
-    /* Profile/account edit pages */
-    editProfile: "",
-    
-    signin: "/accounts/login/",
-    register: "/accounts/signup/",
-    
-};
-
-	MediaCMS.user = {
-	name: null,
-	username: null,
-	thumbnail: null,
-	is: {
-		admin: false,
-		anonymous: true,
-	},
-	can: {
-		addMedia: true,
-		editMedia: false,
-		deleteMedia: false,
-		editSubtitle: false,
-		readComment: true,
-		addComment: true,
-		deleteComment: false,
-		editProfile: false,
-		deleteProfile: false,
-		manageMedia: false,
-		manageUsers: false,
-		manageComments: false,
-	},
-	pages: {
-		media: '/user/',
-		about: '/user//about',
-		playlists: '/user//playlists',
-	}
-};
-
-
-	MediaCMS.contents = {
-    sidebar: {
-        navMenuItems: [{
-                text: "About",
-                link: "/about",
-                icon: 'contact_support',
-            },
-            {
-                text: "Terms",
-                link: "/tos",
-                icon: 'insert_drive_file',
-            },
-            {
-                text: "Contact",
-                link: "/contact",
-                icon: 'alternate_email',
-            }
-        ],
-        belowNavMenu: null,
-        footer: 'Powered by <a href="//mediacms.io" title="mediacms.io" target="_blank">mediacms.io</a>',
-    },
-    uploader: {
-        belowUploadArea: "",
-        postUploadMessage: "",
-    },
-};
-	MediaCMS.features = {
-	embeddedVideo: {
-		initialDimensions: {	// In pixels.
-			width: 560,		
-            height: 315,
-		},
-	},
-	headerBar:{
-		hideLogin: false,
-		hideRegister: false,
-	},
-	sideBar: {
-	  hideHomeLink: false,
-	  hideTagsLink: false,
-	  hideCategoriesLink: false,
-	},
-	media:{
-		actions:{
-			share: true,
-			report: true,
-			like: true,
-			dislike: true,
-			download: true,
-			comment: true,
-			save: true,
-		},
-		shareOptions: [ 'embed', 'fb', 'tw', 'whatsapp', 'telegram', 'reddit', 'tumblr', 'vk', 'pinterest', 'mix', 'linkedin', 'email' ],
-	},
-	mediaItem:{
-		hideDate: false,
-		hideViews: false,
-		hideAuthor: false,
-	},
-	playlists:{
-		mediaTypes: ['audio', 'video'],
-	}
-};
-
-	MediaCMS.pages = {
-	home: {
-		sections:{
-			latest:{
-				title: 'Latest',
-			},
-		},
-	},
-	search:{
-		advancedFilters: true,
-	},
-	media: {
-		categoriesWithTitle: false,
-		htmlInDescription: false,
-		hideViews: false,
-		related:{
-			initialSize: 15,
-		},
-	},
-	profile:{
-		htmlInDescription: false,
-		includeHistory: false,
-		includeLikedMedia: false,
-	},
-};
-	MediaCMS.site = {
- 	id: 'mediacms',
-    title: "MediaCMS",
-    url: 'https://demo.mediacms.io/',
-    api: 'https://demo.mediacms.io/api/v1',
-    theme: {
-    	mode: 'light',   
-		switch: {
-			position: 'sidebar',	// Valid values: 'header', 'sidebar'.
-		},
-    },
-    logo:{
-    	lightMode:{
-            img: "/static/images/logo_dark.png",
-            svg: "/static/images/logo_dark.svg",
-    	},
-    	darkMode:{
-            img: "/static/images/logo_light.png",
-            svg: "/static/images/logo_light.svg",
-    	},
-    },
-    pages: {
-	    latest:{
-	    	title: 'Recent uploads',
-	    },
-	    featured:{
-	    	title: 'Featured',
-	    },
-	    recommended:{
-	    	title: 'Recommended',
-	    },
-	    members:{
-	    	title: 'Members',
-	    },
-    },
-    userPages: {
-    	liked: {
-	    	title: 'Liked media',
-    	},
-    	history: {
-	    	title: 'History',
-    	},
-    },
-    taxonomies: {
-	    tags: {
-	    	title: 'Tags',
-	    },
-	    categories: {
-	    	title: 'Categories',
-	    },
-    },
-};
-
-
-
-	window.MediaCMS = MediaCMS;
-	
-</script>
-
-        
-    
-
+    <script type="text/javascript">document.body.onfocus=function(){document.title="IBVC - 全球封禁视频收录组织 | International Banned Videos Collection"};document.body.onblur=function(){document.title="又在看视频啊，休息一下吧~"};</script>
 </head>
 
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">
+                IBVC
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/LOGO/web.png" class="logo"/>
+            </a>
 
-    
-<div id="app-header"></div>
-<div id="app-sidebar"></div>
+        </div>
+
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav header-menu">
+                
+                <li>
+                    <a   href="index.html">
+                        首页
+                    </a>
+                </li>
+                
+                <li  >
+                    <a   href="upload.html">
+                        上传
+                    </a>
+                </li>
+                <li  >
+                    <a   href="about.html">
+                        关于
+                    </a>
+                </li>
+                <li  >
+                    <a   href="https://afdian.net/@IBVC-Group">
+                        赞助
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Start banner img-->
 
 
-    <div class="page-main-wrap">
-        
+
+
+<!--End banner img-->
+<!--主要内容 -->
+
+<div class="wrapper">
+    <div class="col-md-12 post-container">
+        <h1 class="page-title">
+
+        </h1>
+    </div>
+</div>
+        <div class="container mask-after">
+            <div class="wrapper">
+                <div class="col-md-12 post-container">
+                     <h1 class="page-title">
+                         
+                             <a href="about.html">IBVC - 关于</a>
+                     </h1>
+                             <div class="row">
+                                 <div class="col-md-12 post-container m-recommend-page">
+                                     
+                                     <div class="row">
+                                        
+                                        <tr><td style="text-align: center">此页面正在开发，更多信息请去GitHub组织主页<a href="https://github.com/IBVC-Group" rel="GitHub">
+                                            GitHub组织主页
+                                          </a>浏览！</td></tr>
+                                        
+
+                                     </div>
+
+                                 </div>
+                             </div>
+                         
+                             
+                   
+                     
+                            </div>
+                            <div class="wrapper">
+                             <div class="col-md-12 post-container">
+                                  <h1 class="page-title">
+                                     <a href="https://afdian.net/@IBVC-Group" rel="tag">
+                                         打赏发电
+                                       </a>
+                                      
+                                  </h1>
+                                      
+                                                  <table>
+                                    
+                                                      <tbody>
+                                                          <div class="col-md-2">
+                                                              <a href="https://afdian.net/@IBVC-Group" class="thumbnail">
+                                                                  <img src="assets/img/hand-holding-dollar-solid.png" alt="打赏">
+                                                              </a>
+                                                          </div>
+                                                          <tr><td style="text-align: center">感谢您能看到这里</td></tr>
+                                                          <tr><td style="text-align: center">这个网站的制作和维护是一件麻烦的事情</td></tr>
+                                                          <tr><td style="text-align: center">我们还需要支付服务器和域名等各种费用</td></tr>
+                                                          <tr><td style="text-align: center">如果您觉得我们IBVC很不错的话</td></tr>
+                                                          <tr><td style="text-align: center">不妨支持我们一下</td></tr>
+                                                          <tr><td style="text-align: center"><a href="https://afdian.net/@IBVC-Group" rel="tag">
+                                                             点此发电
+                                                           </a></td></tr>
+                                                                                         </tbody>
+                                                  </table>
+                             </div>
+                         </div>
+                         <!-- 网站底部 -->
+<h3 id="联系我们"><img src="https://ooo.0o0.ooo/2018/04/15/5ad356e93e3e3.png" alt="5_con" />联系我们</h3>
+<p>网站正在不断完善，您可以在底部评论留言，留下足迹，我会多多采纳您宝贵的意见。感谢您对本网站的支持！</p>
+
+                </div>
+             
+             
+         </div>
+         
+       
 
 
 
 
+   </div>
 
-        
-<div class="page-main">
-    <div class="page-main-inner">
-    
-<div class="custom-page-wrapper">
-	<h2>About</h2>
-	<hr/>
-	
-    <p><a href="https://mediacms.io">MediaCMS</a> is a modern, fully featured open source video and media CMS. It is developed to meet the needs of modern web platforms for viewing and sharing media.</p>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <!--版权信息-->
+    <div class="copyright">
+        Copyright ©2022 <a href="http://www.ibvc.top" target="_blank" style="color:rgb(255, 0, 0)">IBVC</a> All Rights Reserved.</a>&nbsp;
+
     </div>
-    <div class="page-sidebar-content-overlay"></div>
+    
+</footer>
 </div>
 
-    </div>
-
-    
-<div id="app-footer"></div>
 
 
-    
-    <script src="static/lib/video-js/7.7.5/video.min.js"></script>
-    
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+    /*banner 初始化*/
+    $(window).load(function() {
+     $('#slider').nivoSlider({
+        effect: 'random',        // 过渡效果
+        controlNav: false,       // 是否显示图片导航控制按钮（,2,3... ）
+        pauseOnHover: true,      // 鼠标县浮时是否停止动画
+        manualAdvance: false,    // 是否手动切换 
+        animSpeed: 100,          // 图片过渡时间   
+        pauseTime: 2000,         // 图片显示时间
+        pauseOnHover: false,
+        manualAdvance: false,
+    });
+    });
+$(document).ready(function(){
+    $('body').show();
+    $('.version').text(NProgress.version);
+    NProgress.start();
+    setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+})
 
-    
+</script>
+</div>
 
-    
-
-		<script src="static/js/_commons.js"></script>
-
-    <script src="static/js/base.js"></script>
 
 </body>
 
